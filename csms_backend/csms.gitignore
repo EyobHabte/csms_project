@@ -1,0 +1,19 @@
+# Ignore the virtual environment
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Django database
+*.sqlite3
+
+# Ignore Node modules for the React frontend
+csms-frontend/node_modules/
+
+# Build output for React
+csms-frontend/build/
+
+# Environment variables
+.env
