@@ -1,0 +1,157 @@
+/* General */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+/* Hero Section */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 15px;
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background-attachment: fixed; /* Parallax effect */
+}
+img {
+  max-width: 100%; /* Ensure image doesn't overflow the container */
+  height: auto;    /* Maintain aspect ratio */
+  display: block;  /* Remove any default inline spacing */
+}
+@media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll;
+  }
+  .text-animate {
+    opacity: 1 !important;
+    animation: none !important; /* Disable all animations */
+    transition: none !important; /* Disable transitions */
+  }
+
+  .zoom-effect {
+    transform: none !important;
+  }
+  
+}
+
+/* Button Hover Effects */
+.get-started-btn {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.get-started-btn .arrow-icon {
+  margin-left: 10px;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateX(-10px);
+  color: #000000;
+}
+
+.get-started-btn:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.get-started-btn:hover .arrow-icon {
+  opacity: 1;
+  transform: translateX(0);
+  color: #ffffff;
+}
+
+.get-started-btn .button-text {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.get-started-btn:hover .button-text {
+  transform: translateX(-5px);
+}
+
+/* About Section Zoom Effect */
+.zoom-effect {
+  transition: transform 0.4s ease-in-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+.features-section {
+  background-color: #f1f1f1;
+}
+
+.feature-item {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: scale(1.1);
+}
+/* General */
+.text-animate {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Contact Us Section Styling */
+.contact-section {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 2rem 0; /* Further reduced padding */
+}
+
+.contact-section h2 {
+  font-size: 1.8rem; /* Smaller heading font size */
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  font-size: 0.95rem; /* Slightly smaller font size */
+}
+
+.contact-info p {
+  margin: 0.3rem 0; /* Tightened margin between paragraphs */
+}
+
+.contact-icon {
+  color: #ffffff;
+  margin-bottom: 3px; /* Reduced space below the icons */
+}
+
+.contact-info a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #cce5ff;
+}
+
+/* Social Media Icon Styling */
+.social-media {
+  margin-top: 15px; /* Further reduced top margin */
+}
+
+.social-icon {
+  color: #ffffff;
+  margin: 0 8px; /* Reduced spacing between icons */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #cce5ff;
+  transform: scale(1.1); /* Zoom effect on hover */
+}
