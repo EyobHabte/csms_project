@@ -10,6 +10,8 @@ __pycache__/
 *.sqlite3
 
 # Ignore Node modules for the React frontend
+node_modules/
+venv/
 csms-frontend/node_modules/
 
 # Build output for React
